@@ -30,8 +30,10 @@ public abstract class ApplicationView {
 			String trace = String.format(
 					"An error ocurred during %s launch. Message: %s%nParams%n\t- classToLoad: %s%n\t- loadedView: %s%n\t- ExceptionType: %s%n",
 					ApplicationView.class.getSimpleName(), e.getLocalizedMessage(), viewClass, view, e.getClass());
+			
 			logger.severe(trace);
 			logger.severe("Exiting from application.");
+			
 			System.exit(-1);
 		}
 		return view;

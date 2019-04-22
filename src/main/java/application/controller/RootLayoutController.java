@@ -15,8 +15,7 @@ public class RootLayoutController {
 	@FXML
 	private MenuBar menuBar;
 	
-	public RootLayoutController() {
-	}
+	public RootLayoutController() {}
 	
 	@FXML
 	private void initialize() {
@@ -42,5 +41,4 @@ public class RootLayoutController {
 	public void showStatistics() {
 		personOverviewController.showStatistics();
 	}
-	
 }
