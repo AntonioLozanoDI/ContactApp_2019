@@ -57,7 +57,7 @@ public class BirthdayStatisticsController {
         int[] monthCounter = new int[12];
         for (Person p : persons) {
             int month = p.getFechaNacimiento().getMonthValue() - 1;
-            monthCounter[month]++;
+            monthCounter[ month ]++;
         }
 
         XYChart.Series<String, Integer> series = new XYChart.Series<>();

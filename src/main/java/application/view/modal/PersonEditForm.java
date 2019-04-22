@@ -20,8 +20,7 @@ public class PersonEditForm extends ApplicationModal {// TODO refactorizar
 	private PersonEditFormController controller;
 	private Stage formStage;
 
-	public PersonEditForm() {
-	}
+	public PersonEditForm() {}
 
 	@Override
 	protected void buildModal(Stage owner) {
