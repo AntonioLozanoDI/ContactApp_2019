@@ -16,7 +16,6 @@ import javafx.scene.chart.XYChart;
 /**
  * The controller for the birthday statistics view.
  * 
- * @author Marco Jakob
  */
 public class BirthdayStatisticsController {
 
@@ -35,8 +34,8 @@ public class BirthdayStatisticsController {
     @FXML
     private void initialize() {
         // Get an array with the English month names (But with an empty value at the end).
-    	// [January, February, March, April, May, June, July, August, September, October, November, December, ]
-        String[] months = DateFormatSymbols.getInstance(Locale.ENGLISH).getMonths();
+    	// [January, February, March, April, May, June, July, August, September, October, November, December, ]  <-- EMPTY ELEMENT!!!!!
+        String[] months = DateFormatSymbols.getInstance(Locale.forLanguageTag("es-ES")).getMonths();
         
         // Convert it to a list and add it to our ObservableList of months.
         monthNames.addAll(Arrays.asList(months));
