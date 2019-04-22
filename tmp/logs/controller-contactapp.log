@@ -1,6 +1,0 @@
-22/04/2019 11:31:07.188 - [      application.controller.RootLayoutController.initialize()] - [FINEST ] - RootLayoutController successfully initialized.
-22/04/2019 11:31:07.283 - [  application.controller.PersonOverviewController.initialize()] - [FINEST ] - Configured table columns.
-22/04/2019 11:31:07.753 - [  application.controller.PersonOverviewController.initialize()] - [FINEST ] - PersonOverviewController successfully initialized.
-22/04/2019 11:31:09.085 - [    application.controller.PersonOverviewController.lambda$4()] - [FINEST ] - Person selected: Susana Márquez González
-22/04/2019 11:31:10.851 - [  application.controller.PersonEditFormController.initialize()] - [FINEST ] - PersonEditFormController successfully initialized.
-22/04/2019 11:31:12.868 - [application.controller.PersonEditFormController.handleCancel()] - [FINE   ] - Cancel button pressed. Closing form...

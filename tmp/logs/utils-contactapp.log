@@ -1,3 +1,0 @@
-22/04/2019 11:31:07.100 - [        utils.database.DatabaseHelper.askApplicationDatabase()] - [INFO   ] - Using testing database.
-22/04/2019 11:31:07.105 - [         utils.database.DatabaseHelper.createTestingDatabase()] - [INFO   ] - Deleted old testing database.
-22/04/2019 11:31:07.113 - [         utils.database.DatabaseHelper.createTestingDatabase()] - [INFO   ] - Created new testing database.

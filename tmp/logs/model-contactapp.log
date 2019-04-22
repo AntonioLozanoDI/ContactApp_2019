@@ -1,3 +1,0 @@
-22/04/2019 11:31:07.735 - [        application.model.repository.PersonRepository.<init>()] - [FINER  ] - PersonRepository successfully initialized.
-22/04/2019 11:31:07.735 - [                      application.model.dao.PersonDAO.<init>()] - [FINER  ] - PersonDAO successfully initialized.
-22/04/2019 11:31:07.752 - [                     application.model.dao.PersonDAO.findAll()] - [FINER  ] - Retrieved data from 4 person(s)
