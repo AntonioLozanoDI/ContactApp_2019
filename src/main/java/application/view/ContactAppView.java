@@ -47,7 +47,7 @@ public class ContactAppView extends ApplicationView {
 			rootController = (RootLayoutController) rootLoader.getController();
 
 			String trace = String.format("%s parent view successfully loaded. Resource loaded: %s",
-					getClass().getSimpleName(), LoggingUtils.cleanURLPath(resource.getPath()));
+					getClass().getSimpleName(), LoggingUtils.cleanFXMLPath(resource.getPath()));
 			logger.finer(trace);
 		} catch (IOException e) {
 			String trace = String.format(
@@ -68,7 +68,7 @@ public class ContactAppView extends ApplicationView {
 			detailsController = (PersonOverviewController) detailsLoader.getController();
 
 			String trace = String.format("%s child view successfully loaded. Resource loaded: %s",
-					getClass().getSimpleName(), LoggingUtils.cleanURLPath(resource.getPath()));
+					getClass().getSimpleName(), LoggingUtils.cleanFXMLPath(resource.getPath()));
 			logger.finer(trace );
 		} catch (IOException e) {
 			String trace = String.format(

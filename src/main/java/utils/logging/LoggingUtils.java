@@ -12,7 +12,7 @@ public class LoggingUtils {
 		return sw.toString();
 	}
 	
-	public static String cleanURLPath(String toClean) {
+	public static String cleanFXMLPath(String toClean) {
 		return toClean.replace("application/..%5c", "").replace("%5c", "/").substring(1);
 
 	}

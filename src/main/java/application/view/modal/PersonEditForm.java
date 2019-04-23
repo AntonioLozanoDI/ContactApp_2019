@@ -42,7 +42,7 @@ public class PersonEditForm extends ApplicationModal {// TODO refactorizar
 			controller = (PersonEditFormController) loader.getController();
 			controller.setFormStage(formStage);
 
-			logger.finer(String.format("%s successfully loaded. Resource loaded: %s", getClass().getSimpleName(), LoggingUtils.cleanURLPath(resource.getPath())));
+			logger.finer(String.format("%s successfully loaded. Resource loaded: %s", getClass().getSimpleName(), LoggingUtils.cleanFXMLPath(resource.getPath())));
 
 		} catch (IOException e) {
 			DialogBuilder.error()

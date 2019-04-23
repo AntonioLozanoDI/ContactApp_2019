@@ -52,5 +52,4 @@ public class BirthdayStatisticsWindow extends ApplicationModal{
 	public void showView() {
         windowStage.show();
 	}
-
 }

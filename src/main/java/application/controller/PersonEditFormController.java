@@ -32,7 +32,6 @@ public class PersonEditFormController extends ValidableObject<PersonEditFormCont
     @FXML
     private TextField fechaNacimientoTF;
 
-
     private Stage dialogStage;
     
     private Person person;
