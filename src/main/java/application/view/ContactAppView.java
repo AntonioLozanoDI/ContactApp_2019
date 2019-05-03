@@ -82,6 +82,7 @@ public class ContactAppView extends ApplicationView {
 	protected void setScene(Stage stage) {
 		primaryStage = stage;
 		rootController.setPersonOverviewController(detailsController);
+		rootController.setPrimaryStage(stage);
 		detailsController.setPrimaryStage(stage);
 		rootLayout.setCenter(detailsLayout);
 		scene = new Scene(rootLayout);

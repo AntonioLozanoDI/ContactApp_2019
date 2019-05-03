@@ -4,6 +4,7 @@ import java.util.logging.Logger;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.MenuBar;
+import javafx.stage.Stage;
 import utils.logging.ApplicationLoggers;
 
 public class RootLayoutController {
@@ -14,6 +15,8 @@ public class RootLayoutController {
 
 	@FXML
 	private MenuBar menuBar;
+
+	private Stage primaryStage;
 	
 	public RootLayoutController() {}
 	
@@ -24,6 +27,10 @@ public class RootLayoutController {
 
 	public void setPersonOverviewController(PersonOverviewController personOverviewController) {
 		this.personOverviewController = personOverviewController;
+	}
+	
+	public void setPrimaryStage(Stage stage) {
+		this.primaryStage = stage;
 	}
 
 	public void newPerson() {
@@ -40,5 +47,16 @@ public class RootLayoutController {
 
 	public void showStatistics() {
 		personOverviewController.showStatistics();
+	}
+	
+	@FXML
+	public void setFullScreen() {
+		primaryStage.setFullScreen(true);
+	}
+
+	@FXML
+	public void maximize() {
+		primaryStage.setFullScreen(false);
+		primaryStage.setMaximized(true);
 	}
 }

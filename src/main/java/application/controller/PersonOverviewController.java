@@ -110,7 +110,7 @@ public class PersonOverviewController {
 	
 	@FXML
 	public void newPerson() {
-		PersonEditForm personEditForm = ApplicationModal.build(PersonEditForm.class, primaryStage);
+		PersonEditForm personEditForm = ApplicationModal.build(PersonEditForm.class, null);
 		personEditForm.setTitle(Constants.Views.personEditFormTitleNewPerson);
 		personEditForm.setIcon(ApplicationResourceProvider.getPNGFile(Constants.Files.Images.applicationIcon3New).toImage());
 		personEditForm.showView();
@@ -130,7 +130,7 @@ public class PersonOverviewController {
 	public void editPerson() {
 		if(personTV.getSelectionModel().getSelectedIndex() > -1) {
 			Person person = personTV.getSelectionModel().getSelectedItem();
-			PersonEditForm personEditForm = ApplicationModal.build(PersonEditForm.class, primaryStage);
+			PersonEditForm personEditForm = ApplicationModal.build(PersonEditForm.class, null);
 			personEditForm.setTitle(Constants.Views.personEditFormTitleEditPerson);
 			personEditForm.setIcon(ApplicationResourceProvider.getPNGFile(Constants.Files.Images.applicationIcon3Edit).toImage());
 			personEditForm.setPerson(person);
