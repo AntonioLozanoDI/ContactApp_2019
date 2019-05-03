@@ -42,7 +42,7 @@ public final class DatabaseHelper {
 	
 	public static void ensureDatabaseExists() {
 		String dbPath = ApplicationResourceProvider.getDatabaseFile(Constants.Files.Database.databaseFile).toString();
-		if(!Files.exists(Paths.get(dbPath),LinkOption.NOFOLLOW_LINKS)) {
+		if(!Files.exists(Paths.get(dbPath),LinkOption.NOFOLLOW_LINKS) && !useTestingDB) {
 			logger.info("Creating application database.");
 			createDatabase();
 		}
@@ -58,6 +58,7 @@ public final class DatabaseHelper {
 	        inPathFile = ApplicationResourceProvider.getDatabaseFile(Constants.Files.Database.originalTestDatabaseFile).toString();
 	        //Path donde se copiara la base de datos
 	        ouPathFile = ApplicationResourceProvider.getDatabaseFile(Constants.Files.Database.testDatabaseFile).toString();
+	        
 	        File testDb = new File(ouPathFile);
 	        if(Files.exists(testDb.toPath(),LinkOption.NOFOLLOW_LINKS)) {
 				testDb.delete();
