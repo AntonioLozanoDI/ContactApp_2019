@@ -25,7 +25,7 @@
               <MenuItem mnemonicParsing="false" text="About" />
             </items>
           </Menu>
-            <Menu mnemonicParsing="false" text="Window">
+          <Menu mnemonicParsing="false" text="Window">
               <items>
                 <MenuItem mnemonicParsing="false" onAction="#maximize" text="Maximized" >
                      <accelerator>

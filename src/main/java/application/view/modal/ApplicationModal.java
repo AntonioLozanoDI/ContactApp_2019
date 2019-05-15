@@ -26,13 +26,13 @@ public abstract class ApplicationModal {
 		} catch (InstantiationException ie) {
 			String trace = String.format(
 					"An error ocurred during %s instantiation. .%nParams%n\t- classToLoad: %s%n\t- loadedView: %s%n\t- ExceptionType: %s%n%s",
-					ApplicationView.class.getSimpleName(), ie.getLocalizedMessage(), modalClass, view, ie.getClass(),LoggingUtils.getStackTrace(ie));
+					ApplicationModal.class.getSimpleName(), ie.getLocalizedMessage(), modalClass, view, ie.getClass(),LoggingUtils.getStackTrace(ie));
 			logger.severe(trace);
 			System.exit(-1);
 		} catch (Exception e) {
 			String trace = String.format(
 					"Unexpected error ocurred during %s initialization. .%nParams%n\t- classToLoad: %s%n\t- loadedView: %s%n\t- ExceptionType: %s%n%s",
-					ApplicationView.class.getSimpleName(), e.getLocalizedMessage(), modalClass, view, e.getClass(),LoggingUtils.getStackTrace(e));
+					ApplicationModal.class.getSimpleName(), e.getLocalizedMessage(), modalClass, view, e.getClass(),LoggingUtils.getStackTrace(e));
 			logger.severe(trace);
 			System.exit(-1);
 		}
