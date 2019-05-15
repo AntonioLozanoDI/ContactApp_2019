@@ -32,6 +32,7 @@ public class BirthdayStatisticsWindow extends ApplicationModal {
 			windowStage.initModality(Modality.WINDOW_MODAL);
 			windowStage.initOwner(owner);
 			Scene scene = new Scene(page);
+			scene.getStylesheets().add(ApplicationResourceProvider.getCSSFile(Constants.Files.CSS.darkTheme).toURL().toExternalForm());
 			windowStage.setScene(scene);
 
 			// Set the persons into the controller.

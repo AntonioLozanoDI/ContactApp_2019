@@ -12,7 +12,9 @@ import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+import utils.constants.Constants;
 import utils.logging.LoggingUtils;
+import utils.resources.ApplicationResourceProvider;
 
 public class PersonEditForm extends ApplicationModal {// TODO refactorizar
 
@@ -36,6 +38,7 @@ public class PersonEditForm extends ApplicationModal {// TODO refactorizar
 			formStage.initModality(form.getModality());
 			formStage.initOwner(owner);
 			Scene scene = new Scene(page);
+			scene.getStylesheets().add(ApplicationResourceProvider.getCSSFile(Constants.Files.CSS.darkTheme).toURL().toExternalForm());
 			formStage.setScene(scene);
 
 			// Set the stage into the controller.

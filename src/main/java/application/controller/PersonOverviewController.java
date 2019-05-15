@@ -144,6 +144,14 @@ public class PersonOverviewController {
 				
 				showPersonDetails(edited);
 			}
+		} else {
+			DialogBuilder
+            .info()
+            .title("Invalid row selected")
+            .header("You must select one row to be able to remove a row from the table")
+            .finish()
+            .style(ApplicationResourceProvider.getCSSFile(Constants.Files.CSS.darkTheme).toURL().toExternalForm())
+            .alert().showAndWait();
 		}
 	}
 
@@ -155,7 +163,8 @@ public class PersonOverviewController {
 			.title(Constants.Views.personEditFormTitleDeletePerson)
 			.header("Selected person will be deleted: \n" + Person.nombreCompleto(person) + ".")
 			.finish()
-			.icon(ApplicationResourceProvider.getCSSFile(Constants.Files.Images.applicationIcon3Delete).toImage())
+			.icon(ApplicationResourceProvider.getPNGFile(Constants.Files.Images.applicationIcon3Delete).toImage())
+			.style(ApplicationResourceProvider.getCSSFile(Constants.Files.CSS.darkTheme).toURL().toExternalForm())
 			.alert().showAndWait();
 			if(btn.isPresent() && btn.get().equals(ButtonType.OK)) {
 				personDAO.deletePerson(person);
@@ -164,6 +173,14 @@ public class PersonOverviewController {
 				logger.finer("Person deleted successfully.");
 			}
 			
+		} else {
+			  DialogBuilder
+	            .info()
+	            .title("Invalid row selected")
+	            .header("You must select one row to be able to remove a row from the table")
+	            .finish()
+	            .style(ApplicationResourceProvider.getCSSFile(Constants.Files.CSS.darkTheme).toURL().toExternalForm())
+	            .alert().showAndWait();
 		}
 	}
 	

@@ -6,7 +6,7 @@
 <?import javafx.scene.input.KeyCodeCombination?>
 <?import javafx.scene.layout.BorderPane?>
 
-<BorderPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.RootLayoutController">
+<BorderPane prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.RootLayoutController">
    <top>
       <MenuBar fx:id="menuBar" BorderPane.alignment="CENTER">
         <menus>
@@ -27,7 +27,7 @@
           </Menu>
           <Menu mnemonicParsing="false" text="Window">
               <items>
-                <MenuItem mnemonicParsing="false" onAction="#maximize" text="Maximized" >
+                <MenuItem mnemonicParsing="false" onAction="#maximize" text="Maximized">
                      <accelerator>
                         <KeyCodeCombination alt="DOWN" code="F11" control="UP" meta="UP" shift="UP" shortcut="UP" />
                      </accelerator>

@@ -86,6 +86,7 @@ public class ContactAppView extends ApplicationView {
 		detailsController.setPrimaryStage(stage);
 		rootLayout.setCenter(detailsLayout);
 		scene = new Scene(rootLayout);
+		scene.getStylesheets().add(ApplicationResourceProvider.getCSSFile(Constants.Files.CSS.darkTheme).toURL().toExternalForm());
 		primaryStage.setTitle(Constants.Views.applicationTitle);
 		primaryStage.getIcons().add(ApplicationResourceProvider.getPNGFile(Constants.Files.Images.applicationIcon3).toImage());
 		primaryStage.setScene(scene);
